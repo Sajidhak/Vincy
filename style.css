@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#0f0f1a;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* Animated Background */
+.background-animation{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background: radial-gradient(circle at 20% 20%, #1f1f3a, transparent 40%),
+                radial-gradient(circle at 80% 80%, #2a2a72, transparent 40%);
+    animation: moveBackground 10s infinite alternate;
+    z-index:-1;
+}
+
+@keyframes moveBackground{
+    from{transform:translateY(-20px);}
+    to{transform:translateY(20px);}
+}
+
+/* Navbar */
+.navbar{
+    padding:20px 10%;
+}
+
+.logo{
+    font-family:'Orbitron', sans-serif;
+    color:#00f7ff;
+}
+
+/* Hero Section */
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px 10%;
+    flex-wrap:wrap;
+}
+
+.hero-content{
+    max-width:500px;
+    animation: slideIn 1.2s ease;
+}
+
+.hero-content h1{
+    font-size:50px;
+}
+
+.glow-text{
+    color:#00f7ff;
+    text-shadow:0 0 10px #00f7ff,
+                0 0 20px #00f7ff,
+                0 0 40px #00f7ff;
+}
+
+.hero-content h3{
+    margin:10px 0;
+    font-weight:300;
+}
+
+.hero-content p{
+    margin:20px 0;
+    color:#ccc;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#00f7ff;
+    color:#000;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.4s;
+}
+
+.btn:hover{
+    box-shadow:0 0 20px #00f7ff;
+    transform:scale(1.1);
+}
+
+/* Image */
+.hero-image img{
+    width:280px;
+    border-radius:20px;
+    box-shadow:0 0 30px rgba(0,247,255,0.6);
+    animation: floatImage 3s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+}
+
+@keyframes slideIn{
+    from{opacity:0; transform:translateX(-50px);}
+    to{opacity:1; transform:translateX(0);}
+}
+
+/* Sections */
+.section{
+    padding:60px 10%;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom:30px;
+    font-size:32px;
+    color:#00f7ff;
+}
+
+/* Cards */
+.card{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    padding:20px;
+    margin:15px auto;
+    max-width:500px;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #00f7ff;
+}
+
+/* Skills */
+.skills span{
+    display:inline-block;
+    margin:10px;
+    padding:10px 20px;
+    background:#1f1f3a;
+    border-radius:20px;
+    transition:0.4s;
+}
+
+.skills span:hover{
+    background:#00f7ff;
+    color:#000;
+}
+
+/* Footer */
+footer{
+    padding:20px;
+    text-align:center;
+    background:#111;
+    color:#aaa;
+}
