@@ -124,7 +124,7 @@ body{
     border-radius:50%;
     object-fit: cover;
     object-position: center 35%;
-    transform: scale(0.95);   /* Slight zoom out */
+    transform: scale(0.90);   /* Slight zoom out */
 
 
     border:4px solid #00f7ff;
