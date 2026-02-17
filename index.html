@@ -62,6 +62,36 @@
         <span>Accepting Challenges</span>
         <span>Basic C Programming</span>
     </div>
+    <section class="section" id="science">
+    <h2>Physics Curiosities</h2>
+
+    <div class="science-grid">
+
+        <div class="science-card" onclick="openTopic('blackhole')">
+            <h3>What happens inside a Black Hole?</h3>
+            <p>Explore the mystery of event horizons and singularities.</p>
+        </div>
+
+        <div class="science-card" onclick="openTopic('quantum')">
+            <h3>What is Quantum Superposition?</h3>
+            <p>How can particles exist in multiple states?</p>
+        </div>
+
+        <div class="science-card" onclick="openTopic('timedilation')">
+            <h3>Is Time Travel Possible?</h3>
+            <p>Understanding time dilation in relativity.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Detailed Science Modal -->
+<div class="science-modal" id="scienceModal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">✖</span>
+        <div id="modalBody"></div>
+    </div>
+</div>
 </section>
 
 <footer>
